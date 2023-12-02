@@ -4,15 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Image Loading Animation</title>
-  <!-- Include Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <style>
-    /* Style the loading animation */
     .image-container {
       position: relative;
       width: 100%;
-      max-width: 600px; /* Set the maximum width of your container */
-      margin: 0 auto; /* Center the container */
+      max-width: 600px; 
+      margin: 0 auto; 
     }
 
     .loading-overlay {
@@ -24,7 +22,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgba(255, 255, 255, 0.7); /* Set the background color and opacity */
+      background-color: rgba(255, 255, 255, 0.7);
     }
 
     .loading-spinner {
@@ -33,10 +31,8 @@
       border-radius: 50%;
       width: 20px;
       height: 20px;
-      animation: spin 1s linear infinite; /* Add animation to the spinner */
+      animation: spin 1s linear infinite; 
     }
-
-    /* Keyframe animation for the spinner */
     @keyframes spin {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
@@ -52,14 +48,12 @@
         <div class="loading-overlay">
           <div class="loading-spinner"></div>
         </div>
-        <!-- Your image goes here -->
         <img class="img-fluid" src="/2.png" alt="Your Image">
       </div>
     </div>
   </div>
 </div>
 
-<!-- Include Bootstrap JS and Popper.js (if needed) -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
